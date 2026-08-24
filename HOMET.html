@@ -1,0 +1,278 @@
+
+<html>
+<head>
+    <title>
+      AgriFarmers - Create Account
+
+    </title>
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        /* ---------- WHOLE PAGE ---------- */
+
+        body {
+            margin: 0;
+            background: #f5f8f2;
+            font-family: quicksand;
+        }
+
+        .signup-container {
+            width: 100%;
+            max-width: 500px;
+            min-height: 100vh;
+            margin: auto;
+            background: white;
+            text-align: center;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+
+
+        /* ---------- LOGO ---------- */
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 5px auto;
+        }
+
+        .Brand {
+            color: rgb(34,139,30);
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 30px;
+            margin: 0;
+        }
+
+
+        /* ---------- SLOGAN ---------- */
+
+        .Slogan {
+            color: #52735a;
+            font-family: Georgia, serif;
+            font-size: 13px;
+            font-style: italic;
+            letter-spacing: 1px;
+            margin-top: 3px;
+            margin-bottom: 15px;
+        }
+
+
+        /* ---------- CREATE ACCOUNT ---------- */
+
+        .account-title {
+            color: #315d35;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .title-line {
+            width: 25px;
+            height: 2px;
+            background-color: #52735a;
+            margin: 0 auto 12px auto;
+        }
+
+
+        /* ---------- INPUT BOXES ---------- */
+
+        .form {
+            width: 65%;
+            margin: auto;
+        }
+
+        .input-box {
+            height: 38px;
+            border: 1px solid hsl(0, 5%, 79%);
+            border-radius: 6px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            box-sizing: border-box;
+            background: white;
+        }
+
+        .input-box i {
+            color: #52735a;
+            width: 25px;
+            font-size: 13px;
+        }
+
+        .input-box input,
+        .input-box select {
+            border: none;
+            outline: none;
+            flex: 1;
+            font-size: 10px;
+            color: #555;
+            background: transparent;
+        }
+
+        .input-box input::placeholder {
+            color: #999;
+        }
+
+        .input-box select {
+            color: #777;
+        }
+
+
+        /* ---------- PASSWORD EYE ---------- */
+
+        .eye {
+            color: #888 !important;
+            cursor: pointer;
+            width: auto !important;
+        }
+
+
+        /* ---------- CREATE ACCOUNT BUTTON ---------- */
+
+        .create-button {
+            width: 100%;
+            padding-left:10px;
+            padding-top:10px;
+            padding-bottom:10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #2f851f;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .create-button:hover {
+            background-color: #246b18;
+        }
+
+
+        /* ---------- LOGIN ---------- */
+
+        .login-text {
+            font-size: 15px;
+            color: #555;
+            margin-top: 8px;
+        }
+
+        .login-text a {
+            color: #2f851f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="signup-container">
+
+        <!-- LOGO -->
+        <img src="logo2.jpeg" alt="AgriFarmers Logo" class="logo">
+
+        <p class="Brand">
+            AgriFarmers<sup>®</sup>
+        </p>
+
+        <p class="Slogan">
+            "Where Good Food Begins"
+        </p>
+
+
+        <!-- TITLE -->
+        <h2 class="account-title">
+            Create Account
+        </h2>
+
+        <div class="title-line"></div>
+
+
+        <!-- FORM -->
+        <div class="form">
+
+            <!-- NAME -->
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+
+                <input type="text"
+                       placeholder="Enter your name">
+            </div>
+
+
+            <!-- EMAIL -->
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+
+                <input type="email"
+                       placeholder="Enter your email">
+            </div>
+
+
+            <!-- PASSWORD -->
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+
+                <input type="password"
+                       placeholder="Create a password">
+
+                <i class="fa-regular fa-eye eye"></i>
+            </div>
+
+
+            <!-- ROLE -->
+            <div class="input-box">
+                <i class="fa-solid fa-users"></i>
+
+                <select>
+                    <option value="" disabled selected>
+                        Select your role
+                    </option>
+
+                    <option>Farmer</option>
+                    <option>Consumer</option>
+                </select>
+
+                <i class="fa-solid fa-chevron-down eye"></i>
+            </div>
+
+
+            <!-- LOCATION -->
+            <div class="input-box">
+                <i class="fa-solid fa-location-dot"></i>
+
+                <input type="text"
+                       placeholder="Enter your location">
+
+                <i class="fa-solid fa-location-crosshairs eye"></i>
+            </div>
+
+
+            <!-- BUTTON -->
+            <button class="create-button">
+                Create Account
+            </button>
+
+        </div>
+
+
+        <!-- LOGIN -->
+        <p class="login-text">
+            Already have an account?
+            <a href="#">Login</a>
+        </p>
+
+    </div>
+
+</body>
+</html>
